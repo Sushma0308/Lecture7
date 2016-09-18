@@ -7,10 +7,10 @@ angular.module('LunchCheck',[])
 LunchCheckController.$inject=['$scope','$filter'];
 
 LunchCheckController($scope,$filter){
-$scope.name="hbdf,fdjfh,fhdf,fjds";
+var input=$scope.name="hbdf,fdjfh,fhdf,fjds";
 
-}
-function splitString(stringToSplit, separator) {
+
+$scope.CountValue = function splitString(stringToSplit, separator) {
   var arrayOfStrings = stringToSplit.split(separator);
 
   //console.log('The original string is: "' + stringToSplit + '"');
@@ -21,9 +21,9 @@ function splitString(stringToSplit, separator) {
 var space = ' ';
 var comma = ',';
 
-splitString($scope.name, space);
-splitString($scope.name);
-splitString($scope.name, comma);
-
+splitString(input, space);
+splitString(input);
+splitString(input, comma);
+}
 });
 })();

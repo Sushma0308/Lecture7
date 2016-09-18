@@ -9,11 +9,15 @@
   <body>
     <div ng-controller="LunchCheckController">
     <div>
-      <input type="text" class="items">Enter your Items</input
+      Enter your Items<input type="text" id="items" ng-model="name">
     </div>
     <div>
-    <button ng-click="CountValue()">Check If Too Much</button>
+    <button ng-click="CountValue();">Check If Too Much</button>
   </div>
   </div>
+  <script>
+var elem=document.getElementById('items');
+alert(elem);
+  </script>
   </body>
 </html>
